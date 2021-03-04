@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joelma Ferrari Studio</title>
+    <link rel="shortcut icon" href="images/Eye.ico" type="image/x-icon">
+    <link rel="stylesheet" href="cssReset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@200&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="allcontent">
+        <header>
+            <img src="images/selo_branco.png" id="selo" alt=" logo Joelma Ferrari Beauty Studio">
+            <img src="images/logo_branca.png" id="logo" alt=" logo Joelma Ferrari Beauty Studio">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </header>
+        
+        <form>
+            <div class=dadosPessoais>
+
+                <h3>Preencha os dados abaixo e receba sempre nosso conteúdo atualizado e inteiramente grátis!</h3>
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" nome="name" required ><br>
+                </div>
+                <div>
+                    <label for="age">Idade</label>
+                    <input type="text" id="age" idade="age">
+                </div>
+                <div>
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" cidade="city">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" email="email" required>
+                </div>
+                <div>
+                    <label for="phone">Celular</label>
+                    <input type="number" id="phone" celular="phone" placeholder="(XX) XXXXXXXXX">
+                </div>
+            </div>
+
+            <h3>Já fez procedimento de microblading?</h3>
+        
+            <div class="radioInput">
+                <div>
+                    <input type="radio" name="pesquisa" id="not"  value="not" checked>
+                    <label for="not">Nunca</label>
+                </div>
+                <div>
+                    <input type="radio" name="pesquisa" id="once" value="onde">
+                    <label for="once"> Uma vez</label>
+                </div>
+                <div>
+                    <input type="radio" name="pesquisa" id="twice" value="twice">
+                    <label for="twice">Duas vezes</label>
+                </div>
+                <div>
+                    <input type="radio" name="pesquisa" id="more" value="more">
+                    <label for="more">Mais de duas vezes</label>
+                </div>
+            </div>
+            <h3>Qual conteúdo você gostaria de ver por aqui?</h3>
+
+            <div class="checkbox">
+                <div>
+                    <label for="procedimento"><input type="checkbox" name="durante" id="procedimento" value="procedimento">Detalhes do procedimento</label>
+                </div>
+                <div>
+                    <label for="tempo"> <input type="checkbox" name="duração" id="tempo" value="tempo">
+                   Duração do procedimento</label>
+                </div>
+                <div>
+                    <label for="posteriores"><input type="checkbox" name="depois" id="posteriores" value="posteriores">Cuidados com a sobrancelha</label>
+                </div>
+            </div>
+
+            <h3>Quer contar mais alguma coisa, a gente adora te ouvir.</h3>
+
+            <div>
+               <textarea name="coments" id="comentário" cols="30" rows="10" placeholder="Olá..."></textarea>
+            </div>
+            <div class="enviar"><button type="submit">Enviar</button></div>
+        
+        </form>
+        <footer>
+            <p> &copy; Joelma Ferrari Studio - 2021 </p>
+        </footer>
+    </div>
+    
+</body>
+</html>
