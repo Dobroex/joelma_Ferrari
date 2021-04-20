@@ -31,11 +31,12 @@
 nav a {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    padding: 0.4rem;
+    padding: 0.8rem;
     display: block;
     text-decoration: none;
     width: 100%;
     border-bottom:solid 1px black;
+    font-size: 1.2rem;
 }
 
 .figura{
@@ -80,6 +81,10 @@ nav a {
 }
 
 .postagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color:var(--bg_cinza_claro);
     padding-top: 1rem;
     margin-top: 0.5rem;
@@ -91,9 +96,10 @@ nav a {
 }
 
 .postagem img{
-    width:100%;
-    padding: 0.5rem;
-    border-radius: 15px;
+    width:100vw;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
  
 }
 .postagem p{
@@ -132,6 +138,7 @@ nav a {
     align-items: center;
     margin-top: 0.5rem;
     border-radius: 0px 0px 10px 10px;
+    margin-bottom: 1.5rem;
 
 }
 
@@ -174,6 +181,10 @@ nav a {
     align-items: flex-start;
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
+    background-color:var(--bg_rosa_claro);
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .formulario h3{
@@ -187,7 +198,23 @@ nav a {
     display: flex;
     justify-content: space-between;
     margin-top: 0.5rem;
+    max-width: 300px;
    
+}
+.campo input{
+    border-radius: 5px;
+    border-color:var(--bg_cinza_claro);
+}
+
+.radioInput div, .checkbox div {
+    padding-top: 0.5rem;
+}
+.enviar button{
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+    border-color: var(--bg_cinza_claro);
+    box-shadow: 0px 3px 5px grey;
 }
 
 footer{
@@ -252,6 +279,11 @@ footer{
         margin-right: auto;
         margin-left: 1rem;
     }
+
+    .postagem img{
+        width: 100%;
+        padding: 1rem;
+    }
     .avatar{
         width: 25%;
         margin-right: 1.5rem;
@@ -270,6 +302,12 @@ footer{
         max-width: 300px;
     }
 
+    .formulario{
+        max-width:  768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media screen and (min-width:1024px){
@@ -284,13 +322,9 @@ footer{
     }
 
     .blog{
-        max-width: 1440px;
+        max-width: 1024px;
         margin-left: auto;
         margin-right: auto;
     }
-    .formulario{
-        max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    
 }
